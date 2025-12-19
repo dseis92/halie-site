@@ -7,19 +7,18 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Unlock Halie 🔓 | Exclusive Content</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            blur: {
-              sm: '1px',
-              md: '3px',
-            },
+            blur: { sm: '1px', md: '3px' },
           },
         },
       };
     </script>
+
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -34,14 +33,103 @@
       }
     </style>
   </head>
+
   <body class="bg-black text-white">
+    <!-- Top Nav -->
+    <!-- Top Nav -->
+    <header class="sticky top-0 z-50">
+      <div class="bg-pink-600">
+        <div
+          class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
+        >
+          <a
+            href="#"
+            class="text-black font-extrabold tracking-tight"
+            >Unlock Halie 🔓</a
+          >
+
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex items-center gap-3">
+            <a
+              href="#subscribe"
+              class="bg-white text-black px-4 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+              >Subscribe</a
+            >
+
+            <a
+              href="#tip"
+              class="bg-white text-black px-4 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+              >Tip</a
+            >
+
+            <a
+              href="#sneak-peek"
+              class="bg-white text-black px-4 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+              >Sneak Peek</a
+            >
+          </nav>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="navToggle"
+            class="md:hidden bg-white text-black px-3 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            type="button"
+          >
+            <!-- Hamburger Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden px-4 pb-4"
+        >
+          <div class="flex flex-col gap-2">
+            <a
+              href="#subscribe"
+              class="bg-white text-black px-4 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+              >Subscribe</a
+            >
+
+            <a
+              href="#tip"
+              class="bg-white text-black px-4 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+              >Tip</a
+            >
+
+            <a
+              href="#sneak-peek"
+              class="bg-white text-black px-4 py-2 rounded-full font-semibold border border-transparent hover:bg-transparent hover:text-white hover:border-white transition duration-300"
+              >Sneak Peek</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Hero Section -->
     <section
       class="min-h-screen flex flex-col items-center justify-center text-center px-6 py-12"
     >
       <img
-        src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_4654.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L0lNR180NjU0LkpQRyIsImlhdCI6MTc2NTk0NjA5MSwiZXhwIjoxNzk3NDgyMDkxfQ.M3HPSxnCF1VmREiIsRMNt76cnOo7cDpNxioGA5GDtiU"
-        alt="Avatar"
+        src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_4654.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L0lNR180NjU0LkpQRyIsImlhdCI6MTc2NjAwODQ3NywiZXhwIjoxNzk3NTQ0NDc3fQ.TbLcbaSot3QRs7DpqS-c_Vxlmv_k22rStqyGsMOsT_k"
+        alt=""
         class="w-60 h-60 rounded-full border-4 border-pink-500 mb-4"
       />
       <h1 class="text-4xl font-extrabold mb-2">Hey, I’m Halie 💋</h1>
@@ -49,6 +137,7 @@
         I share spicy exclusive content you won’t find anywhere else. Subscribe
         for full access, custom requests, and behind-the-scenes.
       </p>
+
       <!-- begin sub card -->
       <div
         class="bg-gray-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto text-center mt-12"
@@ -59,65 +148,75 @@
           want it 😘
         </p>
 
-        <a
-          href="https://buy.stripe.com/test_9B67sD9en1Ptdtpfob38401"
-          class="bg-white text-pink-600 hover:bg-transparent hover:text-white border border-pink-600 transition duration-300 px-4 py-2 rounded-full font-bold text-base"
-          onmouseover="this.innerText='$25/Month';"
-          onmouseout="this.innerText='Subscribe Now 💖';"
-          >Subscribe Now 💖</a
-        >
-        <a
-          href="https://donate.stripe.com/test_14A28j9en79N7510th38403"
-          class="bg-pink-600 text-white hover:bg-transparent hover:text-pink-600 border border-pink-600 transition duration-300 px-4 py-2 rounded-full font-bold text-base"
-          onmouseover="this.innerText='Thanks Daddy 💸';"
-          onmouseout="this.innerText='Leave a Tip';"
-          >Leave a Tip</a
-        >
+        <div class="flex items-center justify-center gap-3">
+          <a
+            href="https://buy.stripe.com/test_9B67sD9en1Ptdtpfob38401"
+            class="bg-white text-pink-600 hover:bg-transparent hover:text-white border border-pink-600 transition duration-300 px-4 py-2 rounded-full font-bold text-base"
+            onmouseover="this.innerText='$25/Month';"
+            onmouseout="this.innerText='Subscribe Now 💖';"
+            >Subscribe Now 💖</a
+          >
+
+          <a
+            href="https://donate.stripe.com/test_14A28j9en79N7510th38403"
+            class="bg-pink-600 text-white hover:bg-transparent hover:text-pink-600 border border-pink-600 transition duration-300 px-4 py-2 rounded-full font-bold text-base"
+            onmouseover="this.innerText='Thanks Daddy 💸';"
+            onmouseout="this.innerText='Leave a Tip';"
+            >Leave a Tip</a
+          >
+        </div>
       </div>
       <!-- end sub card -->
     </section>
 
     <!-- Gallery Preview -->
-    <section class="bg-gray-900 py-16 px-6">
+    <section
+      id="sneak-peek"
+      class="bg-gray-900 py-16 px-6"
+    >
       <h2 class="text-2xl font-bold mb-6 text-center">🔥 Sneak Peek</h2>
+
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
         <a
           href="/pricing-access.html"
           class="block"
         >
           <img
-            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/profile-picture.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L3Byb2ZpbGUtcGljdHVyZS5KUEciLCJpYXQiOjE3NjU5NDU3MzUsImV4cCI6MTc5NzQ4MTczNX0.Kik7rfXwv6tlzeoMTSm0Pf2_X1DBQWT1Qsf0SIKPGPM"
-            class="w-300 h-300 rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:translate-y-[-25px] hover:z-80 cursor-pointer"
+            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_1148.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L0lNR18xMTQ4LkpQRyIsImlhdCI6MTc2NjAxNDc2OSwiZXhwIjoxNzk3NTUwNzY5fQ.NJokxT5qK7ieA4byreitUdSueaO_GlRSCWh5bt-mGE8ß"
+            class="w-[150px] h-[150px] rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:-translate-y-2 cursor-pointer"
             alt="teaser 1"
           />
         </a>
+
         <a
           href="/pricing-access.html"
           class="block"
         >
           <img
-            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_0003_Original%20Copy.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L0lNR18wMDAzX09yaWdpbmFsIENvcHkuSlBHIiwiaWF0IjoxNzY1OTQ2NzIyLCJleHAiOjE3OTc0ODI3MjJ9.GKE3fsScZoRhItdgLnE-KfTd-b82iLYWm--IyS05cL4"
-            class="w-300 h-300 rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:translate-y-[-25px] hover:z-80 cursor-pointer"
+            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_0003_Original%20Copy.JPG?token=REPLACE_ME"
+            class="w-[300px] h-[300px] rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:-translate-y-2 cursor-pointer"
             alt="teaser 2"
           />
         </a>
+
         <a
           href="/pricing-access.html"
           class="block"
         >
           <img
-            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_1148.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L0lNR18xMTQ4LkpQRyIsImlhdCI6MTc2NTk0NjE1MCwiZXhwIjoxNzk3NDgyMTUwfQ.VoPgOhntyTRj_H817tToyS-8Ays0ly-z38oJ10SgEq8"
-            class="w-300 h-300 rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:translate-y-[-25px] hover:z-80 cursor-pointer"
+            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_1148.JPG?token=REPLACE_ME"
+            class="w-[300px] h-[300px] rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:-translate-y-2 cursor-pointer"
             alt="teaser 3"
           />
         </a>
+
         <a
           href="/pricing-access.html"
           class="block"
         >
           <img
-            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_0776.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80YjJiNThhYy00MDNmLTQyNWMtYjM3ZS1lNjZjMDk3YjA1MTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjb250ZW50L0lNR18wNzc2LkpQRyIsImlhdCI6MTc2NTk0NjE4NCwiZXhwIjoxNzk3NDgyMTg0fQ.vvh36FbjItrmYbl2RAoF235loReGnBxuoB5NLnGYTIs"
-            class="w-300 h-300 rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:translate-y-[-25px] hover:z-80 cursor-pointer"
+            src="https://tkjgunnqldzfpxifcppp.supabase.co/storage/v1/object/sign/content/IMG_0776.JPG?token=REPLACE_ME"
+            class="w-[300px] h-[300px] rounded-lg filter blur-md transition-all duration-300 ease-in-out hover:blur-none hover:-translate-y-2 cursor-pointer"
             alt="teaser 4"
           />
         </a>
@@ -135,7 +234,7 @@
       </p>
       <a
         href="https://buy.stripe.com/test_28EaEP4Y70Lp60XcbZ38400"
-        class="bg-white text-pink-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-transparent hover:text-white border border-blk-600 transition duration-300 px-4 py-2 rounded-full font-bold text-base"
+        class="bg-white text-pink-600 px-4 py-2 rounded-full font-bold text-base hover:bg-transparent hover:text-white border border-white transition duration-300"
         onmouseover="this.innerText='$49/Month';"
         onmouseout="this.innerText='Subscribe Now 💖';"
         >Subscribe Now</a
@@ -152,8 +251,10 @@
         Your support means the world! Leave a one-time tip below:
       </p>
       <a
-        href=""
-        class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-full text-lg"
+        href="https://donate.stripe.com/test_14A28j9en79N7510th38403"
+        class="bg-pink-600 text-white hover:bg-transparent hover:text-pink-600 border border-pink-600 transition duration-300 px-4 py-2 rounded-full font-bold text-base"
+        onmouseover="this.innerText='Make it rain 💦';"
+        onmouseout="this.innerText='Tip Now';"
         >Tip Now</a
       >
     </section>
